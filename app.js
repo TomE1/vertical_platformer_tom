@@ -7,8 +7,11 @@ canvas.height = 576;
 c.fillStyle = 'grey';
 c.fillRect(10, 10, canvas.width, canvas.height);
 
-c.fillStyle = 'pink';
-c.fillRect(100, 200, 100, 100);
-
 c.fillStyle = 'blue';
 c.fillRect(200, 100, 100, 100);
+
+function animate() {
+  window.requestAnimationFrame(animate);
+}
+
+animate()
